@@ -1,7 +1,6 @@
 import discord
 import random
 from discord.ext import commands
-from config import token
 
 intents = discord.Intents.default()
 intents.messages = True
