@@ -1,6 +1,7 @@
 import discord
 import random
 from discord.ext import commands
+import os
 
 intents = discord.Intents.default()
 intents.messages = True
@@ -49,4 +50,4 @@ async def on_message(message):
 
     await bot.process_commands(message)
 
-bot.run(token)
+bot.run(os.environ['token'])
